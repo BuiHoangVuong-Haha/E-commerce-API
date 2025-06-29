@@ -1,33 +1,82 @@
-HELP.md
+# ========== BUILD TOOLS ==========
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+build/
+.gradle/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
 
-### STS ###
-.apt_generated
+# ========== JAVA COMPILED FILES ==========
+*.class
+*.jar
+*.war
+*.ear
+
+# ========== ENV / DOCKER ==========
+.env
+.env.*
+Dockerfile
+*.dockerfile
+docker-compose.override.yml
+docker/
+
+# ========== IDEs ==========
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea/runConfigurations/
+
+# Eclipse / STS
 .classpath
-.factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
+.apt_generated
+.factorypath
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# VS Code
+.vscode/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# ========== LOGS / TEMP ==========
+*.log
+*.log.*
+logs/
+*.tmp
+*.bak
+*.swp
+*~
+*.pid
+hs_err_pid*
+replay_pid*
+.restart
+
+# ========== SYSTEM FILES ==========
+.DS_Store
+Thumbs.db
+
+# ========== DB FILES ==========
+*.sqlite
+*.db
+*.h2.db
+
+# ========== SECURITY FILES ==========
+*.pem
+*.crt
+*.jks
+*.keystore
+*.p12
+
+# ========== OTHER ==========
+HELP.md
